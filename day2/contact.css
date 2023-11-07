@@ -6,17 +6,18 @@
 .input-contact{
     padding: 6px; 
     border-radius: 8px; 
-    background-color: #dddddd; 
+    background-color: white; 
     border-color: #d9d9d9;
 }
 
 .label-contact{
     font-weight: bold;
     font-size: 15px;
+    margin-top: 20px;
 }
 
 .submit-contact{
-    background-color: orangered;
+    background-color: black;
     color: white;
     padding: 10px;
     border-radius: 8px;
