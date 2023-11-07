@@ -1,0 +1,3 @@
+justify-content for row
+align-items for column
+text-align for text
