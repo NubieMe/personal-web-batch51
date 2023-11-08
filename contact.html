@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="contact.css">
+        <style type="text/css">
+            body {font-family: sans-serif;}
+        </style>
+    </head>
+
+    <body style="background-color: #e2e6ea;">
+        <nav class="navbar">
+            <div style="display: flex; align-items: center; height: 100%; margin-left: 50px;">
+                
+                <ul style="display: flex; list-style: none; gap: 40px; align-items: center;">
+                    <li>
+                        <img src="assets/image/dumbways.png" style="width: 70px;"/>
+                    </li>
+                    <li class="nav-text">
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-text">
+                        <a href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+                </ul>
+                <div style="display: flex; width: 100%; justify-content: end; margin-right: 50px;">
+                    <a href="contact.html" class="btn-contact">Contact Me</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <form class="container-form">
+                <label style="font-size: 20px; text-align: center; margin-top: 20px;">GET IN TOUCH</label>
+
+                <label class="label-contact">Name</label>
+                <input type="text" class="input-contact" id="inputName"/>
+                <label class="label-contact">Email</label>
+                <input type="text" class="input-contact" id="inputEmail"/>
+                <label class="label-contact">Phone Number</label>
+                <input type="text" class="input-contact" id="inputPhone"/>
+                <label class="label-contact">Subject</label>
+                <select class="input-contact" id="inputSubject">
+                    <option></option>
+                    <option>Frontend Developer</option>
+                    <option>Backend Developer</option>
+                    <option>Fullstack Developer</option>
+                </select>
+                <label class="label-contact">Your message</label>
+                <textarea style="height:80px" class="input-contact" id="inputMessage"></textarea>
+                <input type="button" value="Submit" class="submit-contact"/>
+            </form>
+        </div>
+        <script></script>
+    </body>
+</html>

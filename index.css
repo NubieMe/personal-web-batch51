@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: #f4f3f3;
+    height: 100px;
+}
+
+.nav-text{
+    font-size: 23px;
+}
+
+.nav-text a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-text a:hover{
+    color: orangered;
+}
+
+.btn-contact{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+}
