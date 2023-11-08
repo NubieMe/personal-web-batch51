@@ -2,6 +2,9 @@
     <head>
         <title>Contact Me</title>
         <link rel="stylesheet" href="contact.css">
+        <style type="text/css">
+            body {font-family: sans-serif;}
+        </style>
     </head>
 
     <body style="background-color: #e2e6ea;">
@@ -34,21 +37,23 @@
                 <label style="font-size: 20px; text-align: center; margin-top: 20px;">GET IN TOUCH</label>
 
                 <label class="label-contact">Name</label>
-                <input type="text" class="input-contact"/>
+                <input type="text" class="input-contact" id="inputName"/>
                 <label class="label-contact">Email</label>
-                <input type="text" class="input-contact"/>
+                <input type="text" class="input-contact" id="inputEmail"/>
                 <label class="label-contact">Phone Number</label>
-                <input type="text" class="input-contact"/>
+                <input type="text" class="input-contact" id="inputPhone"/>
                 <label class="label-contact">Subject</label>
-                <select class="input-contact">
+                <select class="input-contact" id="inputSubject">
+                    <option></option>
                     <option>Frontend Developer</option>
                     <option>Backend Developer</option>
                     <option>Fullstack Developer</option>
                 </select>
                 <label class="label-contact">Your message</label>
-                <textarea style="height:80px" class="input-contact"></textarea>
-                <input type="button" value="Submit" class="submit-contact">
+                <textarea style="height:80px" class="input-contact" id="inputMessage"></textarea>
+                <input type="button" value="Submit" class="submit-contact"/>
             </form>
         </div>
+        <script></script>
     </body>
 </html>
