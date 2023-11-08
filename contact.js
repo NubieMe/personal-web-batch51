@@ -82,6 +82,7 @@ function submitData() {
         alert(`Subject tidak boleh kosong`)
     }   else if (!inputMessage){
         alert(`Message tidak boleh kosong`)
+        return
     }   else
     
     console.log("name : ",inputName)
@@ -91,7 +92,11 @@ function submitData() {
     console.log("message : ",inputMessage)
 
     let a = document.createElement(`a`)
-
+    
+    if (!inputName || !inputEmail || !inputPhone || !inputSubject || !inputMessage){
+        return
+    }   else
+    
     a.href= `mailto:${inputEmail}?subject=${inputSubject}&body=${inputMessage}`
     a.click()    
 }
