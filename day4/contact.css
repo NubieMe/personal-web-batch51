@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    background-color: #e2e6ea;
+}
+
 .input-contact{
     padding: 6px; 
     border-radius: 8px; 
@@ -22,6 +26,7 @@
     padding: 10px;
     border-radius: 8px;
     width: 100px;
+    margin-bottom: 100px;
 }
 
 .container{
@@ -39,11 +44,12 @@
 
 .navbar{
     background-color: #f4f3f3;
-    height: 100px;
+    height: 80px;
 }
 
 .nav-text{
     font-size: 23px;
+    font-weight: 600;
 }
 
 .nav-text a{
@@ -63,4 +69,5 @@
     width: 100px;
     text-decoration: none;
     text-align: center;
+    font-weight: bold;
 }

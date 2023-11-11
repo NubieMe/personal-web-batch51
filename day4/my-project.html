@@ -1,0 +1,252 @@
+<html>
+
+<head>
+    <title>Creating Project Page</title>
+    <link rel="stylesheet" href="my-project.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body {font-family: poppins, sans-serif;}
+    </style>
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav class="navbar">
+        <div style="display: flex; align-items: center; height: 100%; margin-left: 50px;">
+            
+            <ul style="display: flex; list-style: none; gap: 40px; align-items: center;">
+                <li>
+                    <img src="assets/image/dumbways.png" style="width: 70px;"/>
+                </li>
+                <li class="nav-text">
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li style="width: 130px;" class="nav-text">
+                    <a href="my-project.html">
+                        My Project
+                    </a>
+                </li>
+            </ul>
+            <div style="display: flex; width: 100%; justify-content: end; margin-right: 50px;">
+                <a href="contact.html" class="btn-contact">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog -->
+    <div class="project">
+        <!-- Form -->
+        <div class="project-form">
+            <div class="form-container">
+                <form onsubmit="submitProject(event)">
+                    <h1>ADD MY PROJECT</h1>
+                    <div>
+                        <label for="inputName">Project Name</label>
+                        <input type="text" id="inputName" required/>
+                    </div>
+                    <div class="date-container">
+                        <div>
+                            <label for="inputStart">Start Date</label>
+                            <input type="date" id="inputStart" required></input>
+                        </div>
+                        <div>
+                            <label for="inputEnd">End Date</label>
+                            <input type="date" id="inputEnd" required></input>     
+                        </div>
+                    </div>
+                    <div>
+                        <label for="inputDesc">Description</label>
+                        <input type="textarea" cols="30" rows="5" id="inputDesc" required/>    
+                    </div>
+                    <label>Technologies</label>
+                    <div  class="tech-container-out">
+                        <div class="tech-container-in">
+                            <div>
+                                <input type="checkbox" id="inputTech1" name="inputTech1" value="0"/>
+                                <label for="inputTech1">Node JS</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="inputTech2" name="inputTech2" value="1"/>
+                                <label for="inputTech2">React JS</label>
+                            </div>
+                        </div>
+                        <div class="tech-container-in">
+                            <div>
+                                <input type="checkbox" id="inputTech3" name="inputTech3" value="2"/>
+                                <label for="inputTech3">Next JS</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="inputTech4" name="inputTech4" value="3"/>
+                                <label for="inputTech4">Typescript</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label>Upload Image</label>
+                        <div class="input-project-image">
+                            <label for="inputImage">
+                                <p>Choose</p>
+                                <img style="width: 20px; float: inline-end;" src="assets/icon/file.png" alt="file" />
+                            </label>
+                            <input type="file" id="inputImage" hidden/>
+                        </div>
+                    </div>
+                    <div class="button-sub">
+                        <button class="submit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <hr class="line" />
+        <div class="project-list">
+            <h1>MY PROJECT</h1>
+            <div id="contents">
+                <!-- dynamic content-->
+
+                <!-- <div class="project-list-item">
+                    <div class="project-image">
+                        <img src="assets/image/phone1.jpg" alt="" />
+                    </div>
+                    <div class="project-content">
+                        <h4>
+                            <a href="project-detail.html" target="_blank">Dumbways Mobile App - 2023</a>
+                        </h4>
+                        <div class="detail-project-content">
+                            durasi 3 bulan
+                        </div>
+                        <p>
+                            App that used for dumbways students, it was deployed and can be downloaded on playstore. Happy Download
+                        </p>
+                        <div class="tech">
+                            <img class="iconTech1" src="assets/icon/Node.png" style="width: 30px;"/>
+                            <img class="iconTech2" src="assets/icon/React.png" style="width: 30px;"/>
+                            <img class="iconTech3" src="assets/icon/Next.png" style="width: 30px;"/>
+                            <img class="iconTech4" src="assets/icon/Typescript.png" style="width: 30px;"/>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-del">Delete</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="project-list-item">
+                    <div class="project-image">
+                        <img src="assets/image/phone2.jpg" alt="" />
+                    </div>
+                    <div class="project-content">
+                        <h4>
+                            <a href="project-detail.html" target="_blank">Dumbways Mobile App - 2023</a>
+                        </h4>
+                        <div class="detail-project-content">
+                            durasi 3 bulan
+                        </div>
+                        <p>
+                            App that used for dumbways students, it was deployed and can be downloaded on playstore. Happy Download
+                        </p>
+                        <div class="tech">
+                            <img class="iconTech1" src="assets/icon/Node.png" style="width: 30px;"/>
+                            <img class="iconTech2" src="assets/icon/React.png" style="width: 30px;"/>
+                            <img class="iconTech3" src="assets/icon/Next.png" style="width: 30px;"/>
+                            <img class="iconTech4" src="assets/icon/Typescript.png" style="width: 30px;"/>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-del">Delete</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="project-list-item">
+                    <div class="project-image">
+                        <img src="assets/image/phone3.jpg" alt="" />
+                    </div>
+                    <div class="project-content">
+                        <h4>
+                            <a href="project-detail.html" target="_blank">Dumbways Mobile App - 2023</a>
+                        </h4>
+                        <div class="detail-project-content">
+                            durasi 3 bulan
+                        </div>
+                        <p>
+                            App that used for dumbways students, it was deployed and can be downloaded on playstore. Happy Download
+                        </p>
+                        <div class="tech">
+                            <img class="iconTech1" src="assets/icon/Node.png" style="width: 30px;"/>
+                            <img class="iconTech2" src="assets/icon/React.png" style="width: 30px;"/>
+                            <img class="iconTech3" src="assets/icon/Next.png" style="width: 30px;"/>
+                            <img class="iconTech4" src="assets/icon/Typescript.png" style="width: 30px;"/>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-del">Delete</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="project-list-item">
+                    <div class="project-image">
+                        <img src="assets/image/coding1.jpg" alt="" />
+                    </div>
+                    <div class="project-content">
+                        <h4>
+                            <a href="project-detail.html" target="_blank">Dumbways Mobile App - 2023</a>
+                        </h4>
+                        <div class="detail-project-content">
+                            durasi 3 bulan
+                        </div>
+                        <p>
+                            App that used for dumbways students, it was deployed and can be downloaded on playstore. Happy Download
+                        </p>
+                        <div class="tech">
+                            <img class="iconTech1" src="assets/icon/Node.png" style="width: 30px;"/>
+                            <img class="iconTech2" src="assets/icon/React.png" style="width: 30px;"/>
+                            <img class="iconTech3" src="assets/icon/Next.png" style="width: 30px;"/>
+                            <img class="iconTech4" src="assets/icon/Typescript.png" style="width: 30px;"/>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-del">Delete</button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="project-list-item">
+                    <div class="project-image">
+                        <img src="assets/image/coding2.jpg" alt="" />
+                    </div>
+                    <div class="project-content">
+                        <h4>
+                            <a href="project-detail.html" target="_blank">Dumbways Mobile App - 2023</a>
+                        </h4>
+                        <div class="detail-project-content">
+                            durasi 3 bulan
+                        </div>
+                        <p>
+                            App that used for dumbways students, it was deployed and can be downloaded on playstore. Happy Download
+                        </p>
+                        <div class="tech">
+                            <img class="iconTech1" src="assets/icon/Node.png" style="width: 30px;"/>
+                            <img class="iconTech2" src="assets/icon/React.png" style="width: 30px;"/>
+                            <img class="iconTech3" src="assets/icon/Next.png" style="width: 30px;"/>
+                            <img class="iconTech4" src="assets/icon/Typescript.png" style="width: 30px;"/>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn-edit">Edit</button>
+                            <button class="btn-del">Delete</button>
+                        </div>
+                        
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="my-project.js"></script>
+</body>
+
+</html>

@@ -3,7 +3,7 @@
 //integer -> 1234
 //float -> 12.34
 
-//array -> ["fahmi", 123, 12.34] tipe data gabungan, ada key berupa index dimulai dari 0
+//array -> ["fahmi", 123, 12.34] tipe data gabungan, ada key berupa index dimulai dari 0 angka 0 diesbut sebagai value
 
 //object ->  {      object butuh key    
 //    nama: "fahmi"
@@ -103,3 +103,4 @@ function submitData() {
 
 //1 == "1" hanya cek value 1 === "1" juga cek tipe data
 //alert() must use string
+
