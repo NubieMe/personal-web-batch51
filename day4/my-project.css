@@ -47,7 +47,6 @@ body{
 
 .form-container{
     display:flex;
-    justify-content: center;
 }
 
 h1{
@@ -84,13 +83,12 @@ div label{
 }
 
 #inputDesc{
-    padding: 8px;
-    padding-bottom: 100px;
+    height: 100px;
     width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
     border-color:  #cacacc;
     border-radius: 5px;
-    text-align: left;
-    vertical-align: top;
     box-shadow: 5px 5px 5px 0px #d5d5d5; 
 }
 
@@ -137,6 +135,7 @@ div label{
 
 .input-project-image img{
     float: right;
+    width: 20px;
 }
 
 .button-sub{
