@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e2e6ea;
+}
+
+.navbar{
+    background-color: #f4f3f3;
+    height: 80px;
+}
+
+.nav-text{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.nav-text a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-text a:hover{
+    color: orangered;
+}
+
+.btn-contact{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.project-form{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 100px;    
+}
+
+.form-container{
+    display:flex;
+}
+
+h1{
+    text-align: center;
+    margin: 40 0 40 0;
+}
+
+div label{
+    font-weight: 600;
+}
+
+#inputName{
+    padding: 8px;
+    width: 100%;
+    border-color:  #cacacc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px #d5d5d5; 
+}
+
+#inputStart{
+    padding: 8px;
+    width: 100%;
+    border-color:  #cacacc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px #d5d5d5; 
+}
+
+#inputEnd{
+    padding: 8px;
+    width: 100%;
+    border-color:  #cacacc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px #d5d5d5; 
+}
+
+#inputDesc{
+    height: 100px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-color:  #cacacc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px #d5d5d5; 
+}
+
+#inputImage{
+    width: 100%;
+}
+
+.date-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tech-container-out{
+    display: flex;
+    flex-direction: row;
+}
+
+.tech-container-in{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding-left: 20px;
+    margin: 10 0 10 0;
+    gap: 10px;
+}
+
+.tech-container-in input{
+    box-shadow: 5px 5px 5px 0px #d5d5d5; 
+}
+
+.input-project-image{
+    height: 20px;
+    padding: 10px;
+    background-color: white;
+    border-color:  #cacacc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 0px #d5d5d5; 
+}
+
+.input-project-image p{
+    display: inline;
+}
+
+.input-project-image img{
+    float: right;
+    width: 20px;
+}
+
+.button-sub{
+    display: flex;
+    justify-content: end;
+}
+
+.submit-btn{
+    background-color: #111727;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 15px;
+    width: 80px;
+    margin-top: 40px;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+.project-list{
+    align-items: center;
+    padding: 40 100 100 100 ;
+    background-color: #f6f6f6;
+}
+
+#contents{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    grid-gap: 30px;
+}
+
+.project-list-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 0px #d5d5d5;  
+}
+
+.project-image{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    background: 50% 50% no-repeat;
+    margin: 0 auto;
+}
+
+.project-image img{
+    position: absolute;
+    object-fit: cover;
+    min-height: 0;
+    width: 250px;
+    height: 250px;
+    
+}
+
+h4 a{
+    text-decoration: none;
+    color: black;
+}
+
+.detail-project-content{
+    color: #999595;
+}
+
+.project-content p{
+    margin: 20 0 20 0;
+    font-size: 13;
+}
+
+.tech img{
+    margin-right: 10px;
+}
+
+.btn-group{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.btn-group button{
+    font-weight: bold;
+}
+
+.btn-edit{
+    background-color: #111727;
+    color: white;
+    border-radius: 15px;
+    width: 50%;
+    padding: 5px;
+}
+
+.btn-del{
+    background-color: #111727;
+    color: white;
+    border-radius: 15px;
+    width: 50%;
+}

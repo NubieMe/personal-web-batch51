@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e2e6ea;
+}
+
+.navbar{
+    background-color: #f4f3f3;
+    height: 80px;
+}
+
+.nav-text{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.nav-text a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-text a:hover{
+    color: orangered;
+}
+
+.btn-contact{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}

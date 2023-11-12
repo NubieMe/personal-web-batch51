@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e2e6ea;
+}
+
+.navbar{
+    background-color: #f4f3f3;
+    height: 80px;
+}
+
+.nav-text{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.nav-text a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-text a:hover{
+    color: orangered;
+}
+
+.btn-contact{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+#content{
+    padding: 0 100 100 100;
+}
+
+h1{
+    text-align: center;
+    margin: 40 0 40 0;
+}
+
+#headPic{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+#pic{
+    display: flex;
+    width: 62%;
+    
+}
+
+#pic img{
+    width: 100%;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+}
+
+.label{
+    padding: 20px;
+}
+
+.label p{
+    font-weight: 600;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.detail p{
+    font-weight: 400;
+    display: inline;
+}
+
+.icon{
+    align-items: center;
+    padding: 15 0 15 30;
+    line-height: 30px;
+}
+
+.icon span{
+    color: #5b5555;
+}
+
+.icon i{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.tech{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.tech-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20 0 20;
+    gap: 40px;
+}
+
+.tech-icon{
+    line-height: 15px;
+    color: #5b5555;
+}
+
+.tech-icon img{
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
