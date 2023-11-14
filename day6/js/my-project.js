@@ -120,7 +120,7 @@ function submitProject(event) {
 
 
 function renderProject() {
-    // document.getElementById("contents").innerHTML = ''
+    document.getElementById("contents").innerHTML = ''
     
     for (let index = 0; index < dataProject.length; index++) {
         
