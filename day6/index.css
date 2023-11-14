@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e2e6ea;
+}
+
+nav{
+    background-color: #f4f3f3;
+    height: 80px;
+}
+
+nav img{
+    margin: 15 15 15 50;
+}
+
+nav ul{
+    float: right; 
+    list-style: none; 
+    align-items: center;
+}
+
+nav ul li{
+    font-size: 23px;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 80px;
+    margin-right: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 7 2;
+}
+
+a#active,a:hover{
+    color: #ff4500; 
+}
+
+.checkbtn{
+    margin: 25 30 0 0;
+    font-size: 30px;
+    display: none;
+    float: right;
+    cursor: pointer;
+    align-items: center;
+}
+
+#check{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .checkbtn{
+        display: block;
+        margin-left: 100px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        font-size: 23px;
+        width: 100%;
+        height: 240px;
+        left: -100%;
+        text-align: center;
+        background-color: grey;
+    }
+    
+    nav ul li a{
+        color: white;
+    }
+
+    #check:checked  ~ ul{
+        left: 0;
+    }
+
+}
+
+.content{
+    background-color: white;
+    border: 1px solid #dcddde;
+    width:80%;
+    padding:20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.main{
+    display: flex; 
+    flex-direction: column;
+}
+
+.text-only{
+    margin: auto; 
+    height: 55%; 
+    padding:20px
+}
+
+.text-only h1{
+    margin:20 20 0 0;
+}
+
+.text-only p{
+    font-size: 18;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.perks{
+    height: 45%;
+    gap: 20px;
+    border: bisque; 
+    margin-top: 50px;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.image img{
+    width: 100%; 
+    float: right; 
+    border-radius: 10px;
+}
+
+.text-image{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.button-group{
+    display: flex;
+    flex-direction: row;
+    height: 45%;
+    gap: 40px; 
+    border: bisque;
+}
+
+.contact{
+    display: flex;
+    padding: 10 30 10 30;  
+    text-align: center;
+    color: white; 
+    background-color: black; 
+    border-radius: 20px;
+    align-items: center;
+}
+
+.download{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: left; 
+    gap: 30px; 
+    margin: 30 0 30 30;
+}
+
+@media only screen and (max-width: 600px) {
+    .content{
+        flex-direction: column;
+    }
+    .image{
+        margin-top: 50px;
+    }
+}
