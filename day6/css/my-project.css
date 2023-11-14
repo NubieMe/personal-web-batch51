@@ -211,7 +211,7 @@ input{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 30px;
+    width: 80%;
 }
 
 .project-list-item{
@@ -220,6 +220,7 @@ input{
     justify-content: center;
     border-radius: 10px;
     padding: 10px;
+    margin: 15px 30px;
     gap: 20px;
     background-color: white;
     box-shadow: 5px 5px 5px 0px #d5d5d5;  
