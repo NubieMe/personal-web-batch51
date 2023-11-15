@@ -1,4 +1,4 @@
-const testimonialData = [
+const testimonials = [
     {
         name: `Andra`,
         quote: `Pengerjaan projectnya tepat sesuai dengan yang saya inginkan.`,
@@ -42,7 +42,7 @@ function html(item) {
 
 function allTestimonials() {
     let testimonialHTML = ``
-    testimonialData.forEach((item) => {
+    testimonials.forEach((item) => {
         testimonialHTML += html(item)
     })
 
@@ -53,7 +53,7 @@ allTestimonials()
 
 function filteredTestimonials(rating) {
     let testimonialHTML = ``
-    const testimonialFiltered = testimonialData.filter((item) => {
+    const testimonialFiltered = testimonials.filter((item) => {
         return item.rating === rating
     })
 
