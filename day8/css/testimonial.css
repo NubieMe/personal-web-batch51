@@ -82,6 +82,9 @@ a#active,a:hover{
         left: 0;
     }
 
+    .btn-group{
+        gap: 30px;
+    }
 }
 
 .container {
@@ -97,7 +100,7 @@ h2{
 
 .btn-group{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
 }
@@ -146,7 +149,6 @@ h2{
 .author {
     font-weight: bold;
     text-align: right;
-    position: bottom;
 }
 
 .profile-testimonial {
