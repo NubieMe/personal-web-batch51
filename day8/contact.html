@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Contact Me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+                integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+                crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="stylesheet" href="css/contact.css">
+    </head>
+
+    <body>
+        <nav>
+            <img src="assets/image/dumbways.png" style="width: 70px;"/>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+                <li style="width: 125px;">
+                    <a href="my-project.html">
+                        My Project
+                    </a>
+                </li>
+                <li>
+                    <a href="testimonial.html">Testimonial</a>
+                </li>
+                <li>
+                    <a id="active" href="contact.html">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <form class="container-form">
+                <h1 style="text-align: center; margin-top: 40px;">GET IN TOUCH</h1>
+
+                <label class="label-contact">Name</label>
+                <input type="text" class="input-contact" id="inputName"/>
+                <label class="label-contact">Email</label>
+                <input type="text" class="input-contact" id="inputEmail"/>
+                <label class="label-contact">Phone Number</label>
+                <input type="text" class="input-contact" id="inputPhone"/>
+                <label class="label-contact">Subject</label>
+                <select class="input-contact" id="inputSubject">
+                    <option></option>
+                    <option>Frontend Developer</option>
+                    <option>Backend Developer</option>
+                    <option>Fullstack Developer</option>
+                </select>
+                <label class="label-contact">Your message</label>
+                <textarea style="height:80px" class="input-contact" id="inputMessage"></textarea>
+                <input type="button" value="Submit" class="submit-contact" onclick="submitData()"/>
+            </form>
+        </div>
+        <script src="js/contact.js"></script>
+    </body>
+</html>
