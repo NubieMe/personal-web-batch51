@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="css/testimonial.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <img src="assets/image/dumbways.png" style="width: 70px;"/>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li style="width: 125px;">
+                <a href="my-project.html">
+                    My Project
+                </a>
+            </li>
+            <li>
+                <a id="active" href="testimonial.html">Testimonials</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Me</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>My Testimonials</h1>
+        <h2>Rating By Star</h2>
+        <div class="btn-group">
+            <div class="rating-btn">
+                <button onclick="allTestimonials()">All</button>
+            </div>
+            <div class="rating-btn">
+                <button onclick="filteredTestimonials(1)">1 <i class="fa-solid fa-star"></i></button>
+            </div>
+            <div class="rating-btn">
+                <button onclick="filteredTestimonials(2)">2 <i class="fa-solid fa-star"></i></button>
+            </div>
+            <div class="rating-btn">
+                <button onclick="filteredTestimonials(3)">3 <i class="fa-solid fa-star"></i></button>
+            </div>
+            <div class="rating-btn">
+                <button onclick="filteredTestimonials(4)">4 <i class="fa-solid fa-star"></i></button>
+            </div>
+            <div class="rating-btn">
+                <button onclick="filteredTestimonials(5)">5 <i class="fa-solid fa-star"></i></button>
+            </div>
+        </div>
+        <section class="testimonials" id="testimonials">
+            <!--dynamic contents-->
+            
+        </section>
+    </div>
+    <script src="js/ajax.js"></script>
+</body>
+
+</html>
