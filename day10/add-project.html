@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add My Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+      
+      *{
+        font-family: 'poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      body{
+        background-color: #e3e7eb;
+      }
+      
+      .container{
+        width: 600px;
+      }
+      
+      .project-list{
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f6f6f6;
+      }
+
+      #list{
+        display: flex;
+        width: 80%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-5" href="index.html">
+          <img src="assets/image/dumbways.png" style="width: 70px"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-4">
+                <a class="nav-link fw-bold fs-4" href="index.html">Home</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link fw-bold fs-4 active" href="add-project.html">Add Project</a>
+              </li>
+            </ul>
+            <a href="contact.html">
+                <button class="btn btn-dark fw-bold px-3 me-5">Contact Me</button>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+    <div class="project">
+      <form class="container w-sm-100 mb-5" onsubmit="submitProject(event)">
+        <h1 class="text-center my-5 fw-bolder">ADD MY PROJECT</h1>
+        <div class="mb-3">
+          <label for="inputName" class="form-label fw-bold">Project Name</label>
+          <input type="text" class="form-control" id="inputName">
+        </div>
+        <div class="mb-3 d-flex column-gap-3">
+          <div class="w-50">
+            <label for="inputStart" class="form-label fw-bold">Start Date</label>
+          <input type="date" class="form-control" id="inputStart">
+        </div>
+        <div class="w-50">
+          <label for="inputEnd" class="form-label fw-bold">End Date</label>
+          <input type="date" class="form-control" id="inputEnd">
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="inputDesc" class="form-label fw-bold">Description</label>
+        <textarea class="form-control" id="inputDesc" rows="3"></textarea>
+      </div>
+      <label class="form-label fw-bold">Technologies</label>
+      <div class="d-flex row">
+        <div class="w-50">
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="inputTech1">
+            <label class="form-check-label" for="inputTech1">
+              NodeJS
+            </label>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="inputTech2">
+            <label class="form-check-label" for="inputTech2">
+              ReactJS
+            </label>
+          </div>
+        </div>
+        <div class="w-50">
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="inputTech3">
+            <label class="form-check-label" for="inputTech3">
+              NextJS
+            </label>
+          </div>
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="inputTech4">
+            <label class="form-check-label" for="inputTech4">
+              Typescript
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="inputImage" class="form-label fw-bold">Upload Image</label>
+        <input type="file" class="form-control" id="inputImage" placeholder="Choose">
+      </div>
+      <div class="d-flex justify-content-end">
+        <button type="submit" class="btn btn-dark rounded-pill fw-bold px-4">Submit</button>
+      </div>
+    </form>
+    
+    
+    <hr class="line"/>
+        <div class="project-list">
+            <h1 class="text-center fw-bold my-5">MY PROJECT</h1>
+            <div id="list">
+              <div id="contents"class="row row-cols-1 row-cols-md-3 g-4">
+              <!-- dynamic contents -->
+
+              </div>
+            </div>
+          </div>
+    </div>
+    <script src="js/my-project.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </body>
+</html>
