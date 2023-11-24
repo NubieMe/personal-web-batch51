@@ -152,7 +152,7 @@
                                     <button class="btn btn-dark py-1 fw-bold w-100">edit</button>
                                 </form>
                                 <form style="width: 50%" method="post" action="/delete-project/{{@index}}">
-                                    <button class="btn btn-dark py-1 fw-bold w-100">delete</button>
+                                    <button type="submit" class="btn btn-dark py-1 fw-bold w-100" onclick="if (!confirm('Are you sure want to delete this?')) { return false }">delete</button>
                                 </form>
                                 </div>
                             </div>
