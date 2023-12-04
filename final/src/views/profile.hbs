@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Edit Profile</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+            
+            *{
+                font-family: 'poppins', sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+
+            body{
+                background-color: #e3e7eb;
+            }
+            
+            .container{
+                width: 450px;
+            }
+            
+            .admin *:hover {
+                color: black;
+            }
+
+            .active {
+                color: black;
+            }
+
+            @media only screen and (max-width:992px) {
+                .admin {
+                    margin-bottom: 18px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <a class="navbar-brand mx-5" href="/home">
+            <img src="/static/image/dumbways.png" style="width: 70px"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item me-4">
+                    <a class="nav-link fw-bold fs-5" href="/home">Home</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link fw-bold fs-5" href="/project">Add Project</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="nav-link fw-bold fs-5" href="/testimonials">Testimonials</a>
+                </li>
+                </ul>
+                {{#if isLogin}}
+                <form class="nav-item me-4 text-dark-emphasis admin" method="post" action="/logout">
+                    <button class="nav-link fw-bold fs-5">Logout</button>
+                </form>
+                {{else}}
+                <div class="nav-item me-4 text-dark-emphasis admin">
+                    <a class="nav-link fw-bold fs-5" href="/register">Register</a>
+                </div>
+                <div class="nav-item me-4 text-dark-emphasis admin">
+                    <a class="nav-link fw-bold fs-5" href="/login">Login</a>
+                </div>
+                {{/if}}
+                <a href="/contact">
+                    <button class="btn btn-dark fw-bold px-3 me-5">Contact Me</button>
+                </a>
+            </div>
+            </div>
+        </nav>
+
+        {{#if isLogin}}
+        <h3 class="text-center my-5 fw-bolder">Edit Your Profile</h3>
+        <form class="container w-sm-100 mb-5" method="POST" action="/profile" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="inputName" class="form-label fw-bold">Fullname</label>
+                <input type="text" class="form-control" id="inputName" name="fullName" value="{{data.fullName}}" required>
+            </div>
+            <div class="mb-3">
+                <label for="inputRole" class="form-label fw-bold">Role</label>
+                <select class="form-select form-select-md" id="inputRole" name="role" required>
+                    <option hidden></option>
+                    <option value="FrontEnd" {{#if result.[0]}} selected {{/if}}>FrontEnd Developer</option>
+                    <option value="BackEnd" {{#if result.[1]}} selected {{/if}}>BackEnd Developer</option>
+                    <option value="Fullstack" {{#if result.[2]}} selected {{/if}}>Fullstack Developer</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="inputImage" class="form-label fw-bold">Upload Your Profile Picture</label>
+                <input type="file" class="form-control" id="inputImage" placeholder="Choose" name="image">
+            </div>
+            <div class="d-flex justify-content-end">
+                <button type="submit" value="submit" class="btn btn-dark rounded-pill fw-bold px-4">Submit</button>
+            </div>
+        </form>
+        {{else}}
+        <h3 class="text-center" style="margin-top: 250px;">You have no authorization to enter this page, please <a href="/login">Login</a> first!</h3>
+        {{/if}}
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></sc>
+    </body>
+</html>
